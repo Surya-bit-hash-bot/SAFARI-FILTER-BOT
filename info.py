@@ -30,8 +30,8 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/2217e1bd03dc0f8146d75.jpg')
 
 # Admins, Channels & Users
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "jk_dev") # widout 👉 @
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5289807146 5069888600').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001946764456 -1002031136418').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2061656269').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '--4547823816').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -47,29 +47,29 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'OF dump')
 
 # Pm files delete 
 FILES_DELETE = is_enabled((environ.get('FILES_DELETE', 'True')), False)
 
 # fill premium users id
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7015329594').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'urlshortx.com'))
-STREAM_API = (environ.get('STREAM_API', '8afa8fbc218cc0791c62495f2c510c92524503ce'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'publicearn.com'))
+STREAM_API = (environ.get('STREAM_API', '544622f7e2758cda8ed00914e54b647fff7895d3'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoghjhh'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/1845700490/3")
-VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
-VERIFY2_API = environ.get('VERIFY2_API', "e45148e36c775f7602b27f6036bcd96a750db1c8")
+VERIFY2_URL = environ.get('VERIFY2_URL', "publicearn.com")
+VERIFY2_API = environ.get('VERIFY2_API', "544622f7e2758cda8ed00914e54b647fff7895d3")
 
 # file Shortner urls
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e45148e36c775f7602b27f6036bcd96a750db1c8')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '544622f7e2758cda8ed00914e54b647fff7895d3')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shortnf')
@@ -82,7 +82,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/lusigroup')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/lusifilms')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001998895377))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002306621324))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Apnamovie4')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -103,7 +103,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001998895377")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002306621324")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
