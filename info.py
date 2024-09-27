@@ -63,14 +63,14 @@ STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/1845700490/3")
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/Hentai_Sparta/5")
 VERIFY2_URL = environ.get('VERIFY2_URL', "publicearn.com")
 VERIFY2_API = environ.get('VERIFY2_API', "544622f7e2758cda8ed00914e54b647fff7895d3")
 
 # file Shortner urls
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '544622f7e2758cda8ed00914e54b647fff7895d3')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shortnf')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
